@@ -55,6 +55,7 @@ const PokerGameQuiz = () => {
     //game data
     const [roundCounter, setRoundCounter] = useState(1);
     const [score, setScore] = useState(0);
+    const [timeLeft, setTimeLeft] = useState(0);
 
     // history
     const [history, setHistory] = useState([]);
@@ -262,13 +263,22 @@ const PokerGameQuiz = () => {
             // increase round counter
             setRoundCounter(roundCounter + 1);
             
+            let pomRoundCounter = roundCounter + 1;
+            if(pomRoundCounter === 10){
+                setRoundCounter(9);
+            }
+
             // generate new deck
             generateHand();
 
         }
         // end quiz and show result
         if(tempRoundCounter === 9) {
+            // set score - time points
+            setScore(score + timeLeft*10);
+
             // show result
+            
             setIsResultVisible(true);
 
             // set quiz state to false and stop timer
@@ -323,7 +333,10 @@ const PokerGameQuiz = () => {
             setHistory,
             setRoundCounter,
             setQuizIsRunning,
-            points
+            points,
+            roundCounter,
+            timeLeft,
+            setTimeLeft,
             }}>
             <div className={Style.GameContainer}>
                 <div className={Style.GameHeader}>

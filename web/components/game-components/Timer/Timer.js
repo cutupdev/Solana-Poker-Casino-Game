@@ -8,7 +8,7 @@ const Timer = ({ initialSeconds = 60, onTimeout }) => {
   const [seconds, setSeconds] = useState(initialSeconds);
   const { quizIsRunning } = useContext(PokerGameQuizContext);
 
-  const { setIsResultVisible } = useContext(PokerGameQuizContext);
+  const { setIsResultVisible, timeLeft, setTimeLeft } = useContext(PokerGameQuizContext);
 
   useEffect(() => {
 
@@ -18,6 +18,9 @@ const Timer = ({ initialSeconds = 60, onTimeout }) => {
 
       interval = setInterval(() => {
         setSeconds(prevSeconds => prevSeconds - 1);
+
+        // time left
+        setTimeLeft(seconds);
       }, 1000);
 
     }

@@ -8,7 +8,7 @@ import PokerGameQuizContext from './PokerGameQuizContext';
 
 const Option = ({ imgSrc1, imgSrc2, isPlayerOne, isPlayerTwo }) => {
 
-    const { playerOneChance, playerTwoChance, nextRound, score, setScore, result, points, addNewHistoryElement } = useContext(PokerGameQuizContext);
+    const { playerOneChance, playerTwoChance, nextRound, score, setScore, result, points, addNewHistoryElement, roundCounter } = useContext(PokerGameQuizContext);
 
     const handleOptionClick = () => {
         // remove all ~ and % from the string and parse it to float
@@ -20,26 +20,27 @@ const Option = ({ imgSrc1, imgSrc2, isPlayerOne, isPlayerTwo }) => {
         result.playerTwoChance = playerTwoChance;
 
         if(isPlayerOne){
-            if(parsedChanceOne > parsedChanceTwo){
-                console.log('YOU WIN!');
+            if(parsedChanceOne > parsedChanceTwo) {
+                console.log('YOU WON!');
                 setScore(score + points)
 
                 // save result
                 result.winner = 0;
                 result.correct = true;
                 result.score = points;
+                result.round = roundCounter;
                 
                 // add result to history
                 addNewHistoryElement(result);
 
             } else {
-                console.log('YOU LOSE!');
-                setScore(score - points)
+                console.log('YOU LOST!');
+                setScore(score)
 
                 // save result
                 result.winner = 1;
                 result.correct = 0;
-                result.score = -points;
+                result.score = 0;
                 
                 // add result to history
                 addNewHistoryElement(result);
@@ -50,7 +51,7 @@ const Option = ({ imgSrc1, imgSrc2, isPlayerOne, isPlayerTwo }) => {
         } else if(isPlayerTwo){
             console.log('player 2 chance to win');
             if(parsedChanceTwo > parsedChanceOne){
-                console.log('YOU WIN!');
+                console.log('YOU WON!');
                 setScore(score + points)
 
                 // save result
@@ -62,13 +63,13 @@ const Option = ({ imgSrc1, imgSrc2, isPlayerOne, isPlayerTwo }) => {
                 addNewHistoryElement(result);
 
             } else {
-                console.log('YOU LOSE!');
-                setScore(score - points)
+                console.log('YOU LOST!');
+                setScore(score)
 
                 // save result
                 result.winner = 0;
                 result.correct = 0;
-                result.score = -points;
+                result.score = 0;
                 
                 // add result to history
                 addNewHistoryElement(result);
