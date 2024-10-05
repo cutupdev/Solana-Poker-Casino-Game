@@ -40,19 +40,26 @@ const Leaderboard = () => {
   
     return (
       <div className={Style.LeaderboardPage}>
-        <p className="font-bold text-2xl text-center mt-20 text-teal-200">
-          {isLoading ? 'Loading...' : 'Leaderboard - TOP USERS'}{' '}
+        <p className={Style.LeaderboardTitle}>
+          {isLoading ? 'Loading...' : 'PokSol Top Achievers'}
         </p>
         {error && <p className="text-red-500 text-center mt-4">{error}</p>}
         {users.length > 0 && (
           <div className={Style.LeaderboardContainer}>
             {users.map((user, index) => (
-                <LeaderboardMember position={index + 1} username={user.username} score={user.score} zeroOrOne={index%2}/>
+              <LeaderboardMember 
+                key={user.id} 
+                position={index + 1} 
+                username={user.username} 
+                score={user.score} 
+                zeroOrOne={index % 2} 
+              />
             ))}
-            </div>
+          </div>
         )}
       </div>
     );
+    
   };
   
-  export default Leaderboard;
+  export default Leaderboard;
