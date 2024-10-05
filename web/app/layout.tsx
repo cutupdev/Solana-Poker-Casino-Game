@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="h-screen overflow-hidden">
+      <body className="h-100 overflow-hidden">
         <ReactQueryProvider>
           <ClusterProvider>
             <SolanaProvider>
