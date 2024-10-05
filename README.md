@@ -4,6 +4,22 @@ This project is generated with the [create-solana-dapp](https://github.com/solan
 
 ## Getting Started
 
+This project is a blockchain-based Texas Holdem Poker Quiz that challenges users to choose between two poker hands and determine which one has a higher chance of winning. The game quiz covers different stages of a poker round: preflop, flop, turn, and river, allowing users to analyze the odds and make decisions based on each stage. User score and address are saved on the Solana blockchain. 
+
+PokSol is a first of its kind on-chain experience for all recreational and professional enjoyers of the game of Hold-Em Poker.
+
+Following the path of classical poker communities like PokerStars and GGPoker we want to become the GO TO place for everything poker - with an on-chain twist on Solana. By incentivizing users with tokens and other rewards we want to create both an educational and professional platform for all types of players.
+
+Using the platform is easy:
+- Login with your wallet and select a username
+- Start the quiz
+- Do your best and guess the most best hands
+- After completing the quiz - you can save your score on Solana!
+
+![Alt text](./img1.png)
+
+![Alt text](./img2.png)
+
 ### Prerequisites
 
 - Node v18.18.0 or higher

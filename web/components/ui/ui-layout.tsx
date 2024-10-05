@@ -32,7 +32,7 @@ export function UiLayout({
             {links.map(({ label, path }) => (
               <li key={path}>
                 <Link
-                  className={pathname.startsWith(path) ? 'active' : ''}
+                  className={pathname.startsWith(path)? '':''}
                   href={path}
                 >
                   {label}

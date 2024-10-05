@@ -20,7 +20,7 @@ export default function DashboardFeature() {
     <div className="h-full  flex flex-col text-white "> 
       <AppHero
         title={
-          <h1 className={`text-6xl font-extrabold text-emerald-400 mb-8 ${isVisible ? 'opacity-100 translate-y-0 transition-all duration-500' : 'opacity-0 translate-y-[-50px]'}`}>
+          <h1 className={`text-6xl font-extrabold text-violet-600 mb-8 ${isVisible ? 'opacity-100 translate-y-0 transition-all duration-500' : 'opacity-0 translate-y-[-50px]'}`}>
             PokSol
           </h1>
         }
@@ -42,22 +42,22 @@ export default function DashboardFeature() {
 
       <div className="container mx-auto px-6 py-12 my-24 flex-grow"> 
         <section className={`mb-16 text-center ${isVisible ? 'opacity-100 translate-y-0 transition-all duration-500 delay-600' : 'opacity-0 translate-y-[50px]'}`}>
-          <h2 className="text-5xl font-extrabold mb-6 text-emerald-400">Our Vision</h2>
+          <h2 className="text-5xl font-extrabold mb-6 text-violet-600">Our Vision</h2>
           <p className="text-2xl leading-relaxed max-w-3xl mx-auto">
             We're dedicated to enhancing poker skills through engaging quizzes while leveraging the transparency of blockchain technology.
           </p>
         </section>
 
         <section className={`mb-16 mt-32 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <h2 className="text-5xl font-extrabold mb-12 text-center text-emerald-400">How It Works</h2>
+          <h2 className="text-5xl font-extrabold mb-12 text-center text-violet-600">How It Works</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
               { title: "1. Take the Quiz", description: "Connect your wallet to take the quiz and earn tokens and points." },
               { title: "2. Save Your Results", description: "Results are securely stored on the Solana blockchain." },
               { title: "3. Improve Your Skills", description: "Track your progress and enhance your poker abilities." }
             ].map((step, index) => (
-              <div key={index} className="p-8 text-lg rounded-xl shadow-xl bg-emerald-200 bg-opacity-30 backdrop-filter backdrop-blur-lg">
-                <h3 className="text-2xl font-semibold mb-4 underline underline-offset-4 decoration-emerald-400 font-extrabold">{step.title}</h3>
+              <div key={index} className="p-8 text-lg rounded-xl shadow-xl bg-violet-900 bg-opacity-30 backdrop-filter backdrop-blur-lg">
+                <h3 className="text-2xl font-semibold mb-4 underline underline-offset-4 decoration-violet-600 font-extrabold">{step.title}</h3>
                 <p className="font-bold text-xl">{step.description}</p>
               </div>
             ))}
@@ -65,9 +65,9 @@ export default function DashboardFeature() {
         </section>
 
         <section className={`text-center mt-32 ${isVisible ? 'opacity-100 translate-y-0 transition-all duration-500 delay-800' : 'opacity-0 translate-y-[50px]'}`}>
-          <h2 className="text-5xl font-extrabold mb-12 text-emerald-400">Take the Quiz</h2>
+          <h2 className="text-5xl font-extrabold mb-12 text-violet-600">Take the Quiz</h2>
           <button
-            className="bg-emerald-600 text-white text-xl px-10 py-4 rounded-full hover:bg-emerald-700 shadow-lg hover:shadow-xl transition-all duration-300"
+            className="bg-violet-600 text-white text-xl px-10 py-4 rounded-full hover:bg-violet-900 shadow-lg hover:shadow-xl transition-all duration-300"
             onClick={() => router.push('/game')}
           >
             Play Now
@@ -77,3 +77,4 @@ export default function DashboardFeature() {
     </div>
   );
 }
+  
