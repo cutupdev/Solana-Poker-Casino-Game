@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
 body {
   height: 100%;
-}
+  overflow-y: auto;
+} 
 
 .wallet-adapter-button-trigger {
   background: rgb(100, 26, 230) !important;

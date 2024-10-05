@@ -10,6 +10,7 @@ export const metadata = {
 };
 
 const links: { label: string; path: string }[] = [
+  {label:'Home', path:'/'},
   { label: 'Game', path: '/game' },
   { label: 'Leaderboard', path: '/leaderboard' },
 ];
@@ -21,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="h-100 overflow-hidden">
+      <body className="">
         <ReactQueryProvider>
           <ClusterProvider>
             <SolanaProvider>
