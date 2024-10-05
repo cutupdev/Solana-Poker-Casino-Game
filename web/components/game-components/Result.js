@@ -93,7 +93,7 @@ const Result = () => {
                                 {/* DID PLAYER WIN? */}
                                 {element.winner === 0 ? <div className={Style.Correct}></div> : null}
                                 {/* PLAYER ONE CHANCE */}
-                                <div className={Style.ResultPlayerChance}>{element.playerOneChance}</div>
+                                <div className={Style.ResultPlayerChance}>{(element.playerOneChance).replace("~", "")}</div>
                                 {/* TO-DO - WHAT PLAYER SELECTED */}
                                 <div className={Style.PlayerSelection}></div>
                                 <div className={Style.PlayerCardResult}>
@@ -107,7 +107,7 @@ const Result = () => {
                                 {/* DID PLAYER WIN? */}
                                 {element.winner === 1 ? <div className={Style.Correct}></div> : null}
                                 {/* PLAYER TWO CHANCE */}
-                                <div className={Style.ResultPlayerChance}>{element.playerTwoChance}</div>
+                                <div className={Style.ResultPlayerChance}>{(element.playerTwoChance).replace("~", "")}</div>
                                 {/* TO-DO - WHAT PLAYER SELECTED */}
                                 <div className={Style.PlayerSelection}></div>
                                 <div className={Style.PlayerCardResult}>
