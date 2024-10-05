@@ -47,7 +47,7 @@ const Leaderboard = () => {
         {users.length > 0 && (
           <div className={Style.LeaderboardContainer}>
             {users.map((user, index) => (
-                <LeaderboardMember position={index + 1} username={user.username} score={user.score} />
+                <LeaderboardMember position={index + 1} username={user.username} score={user.score} zeroOrOne={index%2}/>
             ))}
             </div>
         )}

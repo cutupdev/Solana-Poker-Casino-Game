@@ -1,9 +1,9 @@
 // style
 import Style from './Leaderboard.module.css';
 
-const LeaderboardMember = ({username, score, position}) => {
+const LeaderboardMember = ({username, score, position, zeroOrOne}) => {
     return ( 
-        <div className={Style.LeaderboardMemberContainer}>
+        <div className={zeroOrOne ? Style.LeaderboardMemberContainerZero : Style.LeaderboardMemberContainerOne}>
             <div className={Style.LeaderboardMemberUser}>
                 <div className={Style.LeaderboardMember}>{position}.</div>
                 <div className={Style.LeaderboardMember}>{username}</div>

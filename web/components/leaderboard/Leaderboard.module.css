@@ -4,6 +4,8 @@
     flex-direction: column;
     width: 100vw;
     align-items: center;
+    padding-top: 2em;
+    background-color: #1e1d456a;
 }
 
 .LeaderboardContainer {
@@ -12,22 +14,36 @@
     align-items: center;
     height: 100vh;
     padding: 3em;
-    background-color: #1D232A;
-    width: 60%;
-    margin-top: 2em;
+    background-color: #24234b5c;
+    width: 50%;
+    margin-top: 2em;    
+    border-radius: 1em;
 }
 
-.LeaderboardMemberContainer {
+.LeaderboardMemberContainerZero {
     display: flex;
     flex-direction: row;
     width: auto;
     margin: 1em 5em;
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
-    background-color: #272c33;    
-    box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.1); /* Right and Top shadow */
+    background-color: #2e2d5a;    
+    box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.2); /* Right and Top shadow */
 
 }
+
+.LeaderboardMemberContainerOne {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin: 1em 5em;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #21204A;  
+    box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.2); /* Right and Top shadow */
+
+}
+
 
 .LeaderboardMemberUser {
     display: flex;
