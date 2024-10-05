@@ -1,0 +1,41 @@
+
+.LeaderboardPage {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+
+.LeaderboardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 3em;
+    background-color: #1D232A;
+    width: 60%;
+    margin-top: 2em;
+}
+
+.LeaderboardMemberContainer {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin: 1em 5em;
+    width: 80%;
+    justify-content: space-between;
+    background-color: #272c33;    
+    box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.1); /* Right and Top shadow */
+
+}
+
+.LeaderboardMemberUser {
+    display: flex;
+    flex-direction: row;
+}
+
+.LeaderboardMember {
+    margin: 0 1em;
+    font-size: 2em;
+} 
+
