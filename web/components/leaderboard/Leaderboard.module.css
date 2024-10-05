@@ -5,7 +5,6 @@
     width: 100vw;
     align-items: center;
     padding-top: 2em;
-    background-color: #1E1D45;
 }
 
 .LeaderboardContainer {
@@ -14,10 +13,10 @@
     align-items: center;
     height: 100vh;
     padding: 3em;
-    background-color: #24234B;
     width: 50%;
     margin-top: 2em;    
     border-radius: 1em;
+    border: 1px solid #2e2d5a;
 }
 
 .LeaderboardMemberContainerZero {

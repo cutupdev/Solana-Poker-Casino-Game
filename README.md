@@ -20,6 +20,10 @@ Using the platform is easy:
 
 ![Alt text](./img2.png)
 
+After result is saved to blockchain:
+
+![Alt text](./img3.png)
+
 ### Prerequisites
 
 - Node v18.18.0 or higher
