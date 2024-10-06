@@ -10,11 +10,7 @@ PokSol is a first of its kind on-chain experience for all recreational and profe
 
 Following the path of classical poker communities like PokerStars and GGPoker we want to become the GO TO place for everything poker - with an on-chain twist on Solana. By incentivizing users with tokens and other rewards we want to create both an educational and professional platform for all types of players.
 
-Using the platform is easy:
-- Login with your wallet and select a username
-- Start the quiz
-- Do your best and guess the most best hands
-- After completing the quiz - you can save your score on Solana!
+PokSol features a play-to-earn model. Each week, players compete by answering quiz questions and selecting the poker hand with the highest chance of winning. Your performance is reflected on the leaderboard, and the top player each week will receive free tokens as a reward!
 
 ![Alt text](./img1.png)
 
