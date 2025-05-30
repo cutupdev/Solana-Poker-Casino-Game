@@ -1,112 +1,49 @@
-# solana-poker-quiz
+# Solana Poker Casino Game
 
-This project is generated with the [create-solana-dapp](https://github.com/solana-developers/create-solana-dapp) generator.
+This is poker game on the Solana blockchain. As a play-to-earn game, I have implemented smart contract for security. Solana program was built by Anchor framework and UI is built by next.js. This is not full code, If you are getting issues for full working website, feel free to reach out of me when you need supports[Telegram: https://t.me/DevCutup, Whatspp: https://wa.me/13137423660].
 
-## Getting Started
 
-This project is a blockchain-based Texas Holdem Poker Quiz that challenges users to choose between two poker hands and determine which one has a higher chance of winning. The game quiz covers different stages of a poker round: preflop, flop, turn, and river, allowing users to analyze the odds and make decisions based on each stage. User score and address are saved on the Solana blockchain. 
 
-PokSol is a first of its kind on-chain experience for all recreational and professional enjoyers of the game of Hold-Em Poker.
+## How to use it
 
-Following the path of classical poker communities like PokerStars and GGPoker we want to become the GO TO place for everything poker - with an on-chain twist on Solana. By incentivizing users with tokens and other rewards we want to create both an educational and professional platform for all types of players.
-
-PokSol features a play-to-earn model. Each week, players compete by answering quiz questions and selecting the poker hand with the highest chance of winning. Your performance is reflected on the leaderboard, and the top player each week will receive free tokens as a reward!
-
-![Alt text](./img1.png)
-
-![Alt text](./img2.png)
-
-After result is saved to blockchain:
-
-![Alt text](./img3.png)
-
-### Prerequisites
-
-- Node v18.18.0 or higher
-
-- Rust v1.77.2 or higher
-- Anchor CLI 0.30.1 or higher
-- Solana CLI 1.18.17 or higher
-
-### Installation
-
-#### Clone the repo
-
-```shell
-git clone <repo-url>
-cd <repo-name>
+```bash
+git clone https://github.com/cutupdev/Solana-Poker-Casino-Game.git
 ```
 
-#### Install Dependencies
-
-```shell
-npm install
+```bash
+cd ./Solana-Poker-Casino-Game
 ```
 
-#### Start the web app
-
-```
-npm run dev
+```bash
+npm run install
 ```
 
-## Apps
-
-### anchor
-
-This is a Solana program written in Rust using the Anchor framework.
-
-#### Commands
-
-You can use any normal anchor commands. Either move to the `anchor` directory and run the `anchor` command or prefix the command with `npm run`, eg: `npm run anchor`.
-
-#### Sync the program id:
-
-Running this command will create a new keypair in the `anchor/target/deploy` directory and save the address to the Anchor config file and update the `declare_id!` macro in the `./src/lib.rs` file of the program.
-
-You will manually need to update the constant in `anchor/lib/counter-exports.ts` to match the new program id.
-
-```shell
-npm run anchor keys sync
+- For smart contract deployment:
+```bash
+anchor build
 ```
 
-#### Build the program:
-
-```shell
-npm run anchor-build
+```bash
+anchor deploy
 ```
 
-#### Start the test validator with the program deployed:
-
-```shell
-npm run anchor-localnet
+- To start UI
+```bash
+cd ./frontend
 ```
 
-#### Run the tests
-
-```shell
-npm run anchor-test
+```bash
+npm run install
 ```
 
-#### Deploy to Devnet
-
-```shell
-npm run anchor deploy --provider.cluster devnet
+```bash
+npm run start
 ```
 
-### web
 
-This is a React app that uses the Anchor generated client to interact with the Solana program.
 
-#### Commands
+### Contact Information
+- Telegram: https://t.me/DevCutup
+- Whatsapp: https://wa.me/13137423660
+- Twitter: https://x.com/devcutup
 
-Start the web app
-
-```shell
-npm run dev
-```
-
-Build the web app
-
-```shell
-npm run build
-```
